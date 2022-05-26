@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		6342298A283F463700FCDA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63422989283F463700FCDA10 /* AppDelegate.swift */; };
 		6342298C283F463700FCDA10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342298B283F463700FCDA10 /* SceneDelegate.swift */; };
-		6342298E283F463700FCDA10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342298D283F463700FCDA10 /* ViewController.swift */; };
-		63422991283F463700FCDA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6342298F283F463700FCDA10 /* Main.storyboard */; };
 		63422993283F463E00FCDA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63422992283F463E00FCDA10 /* Assets.xcassets */; };
 		63422996283F463E00FCDA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63422994283F463E00FCDA10 /* LaunchScreen.storyboard */; };
+		634229A1283F4C3E00FCDA10 /* Coordinator Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A0283F4C3E00FCDA10 /* Coordinator Protocol.swift */; };
+		634229A5283F524F00FCDA10 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A4283F524F00FCDA10 /* TextFieldView.swift */; };
+		634229A8283F584100FCDA10 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A7283F584100FCDA10 /* PreviewLayoutComponentModifier.swift */; };
+		634229AA283F5A6700FCDA10 /* PasswordFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A9283F5A6700FCDA10 /* PasswordFieldView.swift */; };
+		634229AC283F60F800FCDA10 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229AB283F60F800FCDA10 /* ButtonView.swift */; };
+		63E9FE66283F715B001ECFBE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE65283F715B001ECFBE /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63422986283F463700FCDA10 /* FirebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63422989283F463700FCDA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6342298B283F463700FCDA10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6342298D283F463700FCDA10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63422990283F463700FCDA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63422992283F463E00FCDA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63422995283F463E00FCDA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63422997283F463E00FCDA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634229A0283F4C3E00FCDA10 /* Coordinator Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator Protocol.swift"; sourceTree = "<group>"; };
+		634229A4283F524F00FCDA10 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		634229A7283F584100FCDA10 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
+		634229A9283F5A6700FCDA10 /* PasswordFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFieldView.swift; sourceTree = "<group>"; };
+		634229AB283F60F800FCDA10 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		63E9FE65283F715B001ECFBE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				63422989283F463700FCDA10 /* AppDelegate.swift */,
 				6342298B283F463700FCDA10 /* SceneDelegate.swift */,
-				6342298D283F463700FCDA10 /* ViewController.swift */,
-				6342298F283F463700FCDA10 /* Main.storyboard */,
+				63E9FE65283F715B001ECFBE /* LoginView.swift */,
+				634229A2283F522300FCDA10 /* Base */,
+				6342299F283F4C2700FCDA10 /* Protocols */,
 				63422992283F463E00FCDA10 /* Assets.xcassets */,
 				63422994283F463E00FCDA10 /* LaunchScreen.storyboard */,
 				63422997283F463E00FCDA10 /* Info.plist */,
 			);
 			path = FirebaseLogin;
+			sourceTree = "<group>";
+		};
+		6342299F283F4C2700FCDA10 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				634229A0283F4C3E00FCDA10 /* Coordinator Protocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		634229A2283F522300FCDA10 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				634229A6283F582300FCDA10 /* Modifiers */,
+				634229A3283F522A00FCDA10 /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		634229A3283F522A00FCDA10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				634229A4283F524F00FCDA10 /* TextFieldView.swift */,
+				634229A9283F5A6700FCDA10 /* PasswordFieldView.swift */,
+				634229AB283F60F800FCDA10 /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		634229A6283F582300FCDA10 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				634229A7283F584100FCDA10 /* PreviewLayoutComponentModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +171,6 @@
 			files = (
 				63422996283F463E00FCDA10 /* LaunchScreen.storyboard in Resources */,
 				63422993283F463E00FCDA10 /* Assets.xcassets in Resources */,
-				63422991283F463700FCDA10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +181,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6342298E283F463700FCDA10 /* ViewController.swift in Sources */,
+				634229AC283F60F800FCDA10 /* ButtonView.swift in Sources */,
+				634229AA283F5A6700FCDA10 /* PasswordFieldView.swift in Sources */,
 				6342298A283F463700FCDA10 /* AppDelegate.swift in Sources */,
+				634229A5283F524F00FCDA10 /* TextFieldView.swift in Sources */,
+				634229A8283F584100FCDA10 /* PreviewLayoutComponentModifier.swift in Sources */,
 				6342298C283F463700FCDA10 /* SceneDelegate.swift in Sources */,
+				63E9FE66283F715B001ECFBE /* LoginView.swift in Sources */,
+				634229A1283F4C3E00FCDA10 /* Coordinator Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6342298F283F463700FCDA10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63422990283F463700FCDA10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63422994283F463E00FCDA10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +332,6 @@
 				INFOPLIST_FILE = FirebaseLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +359,6 @@
 				INFOPLIST_FILE = FirebaseLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
