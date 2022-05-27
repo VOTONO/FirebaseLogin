@@ -7,19 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631EBBF2284080B000D6255D /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631EBBF1284080B000D6255D /* RegexPatterns.swift */; };
+		631EBBF52840874000D6255D /* RegexFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631EBBF42840874000D6255D /* RegexFormItem.swift */; };
+		631EBBF8284087EF00D6255D /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631EBBF7284087EF00D6255D /* ValidationError.swift */; };
+		631EBBFB28408CC500D6255D /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631EBBFA28408CC500D6255D /* ValidationManager.swift */; };
+		631EBBFE2840E6FC00D6255D /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631EBBFD2840E6FC00D6255D /* FormState.swift */; };
 		6342298A283F463700FCDA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63422989283F463700FCDA10 /* AppDelegate.swift */; };
 		6342298C283F463700FCDA10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342298B283F463700FCDA10 /* SceneDelegate.swift */; };
 		63422993283F463E00FCDA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63422992283F463E00FCDA10 /* Assets.xcassets */; };
 		63422996283F463E00FCDA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63422994283F463E00FCDA10 /* LaunchScreen.storyboard */; };
 		634229A1283F4C3E00FCDA10 /* Coordinator Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A0283F4C3E00FCDA10 /* Coordinator Protocol.swift */; };
-		634229A5283F524F00FCDA10 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A4283F524F00FCDA10 /* TextFieldView.swift */; };
+		634229A5283F524F00FCDA10 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A4283F524F00FCDA10 /* InputTextField.swift */; };
 		634229A8283F584100FCDA10 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A7283F584100FCDA10 /* PreviewLayoutComponentModifier.swift */; };
-		634229AA283F5A6700FCDA10 /* PasswordFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A9283F5A6700FCDA10 /* PasswordFieldView.swift */; };
+		634229AA283F5A6700FCDA10 /* InputPasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A9283F5A6700FCDA10 /* InputPasswordField.swift */; };
 		634229AC283F60F800FCDA10 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229AB283F60F800FCDA10 /* ButtonView.swift */; };
 		63E9FE66283F715B001ECFBE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE65283F715B001ECFBE /* LoginView.swift */; };
+		63E9FE68283F77D7001ECFBE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE67283F77D7001ECFBE /* RegisterView.swift */; };
+		63E9FE6A283F7F29001ECFBE /* DateFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE69283F7F29001ECFBE /* DateFieldView.swift */; };
+		63E9FE6F283F998E001ECFBE /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE6E283F998E001ECFBE /* RegisterViewModel.swift */; };
+		63E9FE72283F9D54001ECFBE /* RegosterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE71283F9D54001ECFBE /* RegosterCoordinator.swift */; };
+		63E9FE74283F9EB9001ECFBE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE73283F9EB9001ECFBE /* LoginViewModel.swift */; };
+		63E9FE77283F9EEF001ECFBE /* Login Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE76283F9EEF001ECFBE /* Login Coordinator.swift */; };
+		63E9FE79283F9F40001ECFBE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE78283F9F40001ECFBE /* ProfileView.swift */; };
+		63E9FE7B283FA166001ECFBE /* ProfileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE7A283FA166001ECFBE /* ProfileTextField.swift */; };
+		63E9FE7F283FA552001ECFBE /* ProfilePasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE7E283FA552001ECFBE /* ProfilePasswordField.swift */; };
+		63E9FE8F283FC442001ECFBE /* FormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE8E283FC442001ECFBE /* FormComponent.swift */; };
+		63E9FE92283FCCE6001ECFBE /* FormContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE91283FCCE6001ECFBE /* FormContentBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631EBBF1284080B000D6255D /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
+		631EBBF42840874000D6255D /* RegexFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexFormItem.swift; sourceTree = "<group>"; };
+		631EBBF7284087EF00D6255D /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		631EBBFA28408CC500D6255D /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		631EBBFD2840E6FC00D6255D /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
 		63422986283F463700FCDA10 /* FirebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63422989283F463700FCDA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6342298B283F463700FCDA10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,11 +48,22 @@
 		63422995283F463E00FCDA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63422997283F463E00FCDA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		634229A0283F4C3E00FCDA10 /* Coordinator Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator Protocol.swift"; sourceTree = "<group>"; };
-		634229A4283F524F00FCDA10 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		634229A4283F524F00FCDA10 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		634229A7283F584100FCDA10 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
-		634229A9283F5A6700FCDA10 /* PasswordFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFieldView.swift; sourceTree = "<group>"; };
+		634229A9283F5A6700FCDA10 /* InputPasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordField.swift; sourceTree = "<group>"; };
 		634229AB283F60F800FCDA10 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		63E9FE65283F715B001ECFBE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		63E9FE67283F77D7001ECFBE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		63E9FE69283F7F29001ECFBE /* DateFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFieldView.swift; sourceTree = "<group>"; };
+		63E9FE6E283F998E001ECFBE /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		63E9FE71283F9D54001ECFBE /* RegosterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegosterCoordinator.swift; sourceTree = "<group>"; };
+		63E9FE73283F9EB9001ECFBE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		63E9FE76283F9EEF001ECFBE /* Login Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Coordinator.swift"; sourceTree = "<group>"; };
+		63E9FE78283F9F40001ECFBE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		63E9FE7A283FA166001ECFBE /* ProfileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTextField.swift; sourceTree = "<group>"; };
+		63E9FE7E283FA552001ECFBE /* ProfilePasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePasswordField.swift; sourceTree = "<group>"; };
+		63E9FE8E283FC442001ECFBE /* FormComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormComponent.swift; sourceTree = "<group>"; };
+		63E9FE91283FCCE6001ECFBE /* FormContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContentBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +77,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		631EBBEF2840809800D6255D /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				631EBBFC2840E6D900D6255D /* Event */,
+				631EBBF928408CB200D6255D /* Manager */,
+				631EBBF6284087D500D6255D /* Error */,
+				631EBBF32840872700D6255D /* Model */,
+				631EBBF0284080A000D6255D /* Patterns */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
+		631EBBF0284080A000D6255D /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				631EBBF1284080B000D6255D /* RegexPatterns.swift */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		631EBBF32840872700D6255D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				631EBBF42840874000D6255D /* RegexFormItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		631EBBF6284087D500D6255D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				631EBBF7284087EF00D6255D /* ValidationError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		631EBBF928408CB200D6255D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				631EBBFA28408CC500D6255D /* ValidationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		631EBBFC2840E6D900D6255D /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				631EBBFD2840E6FC00D6255D /* FormState.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		6342297D283F463700FCDA10 = {
 			isa = PBXGroup;
 			children = (
@@ -64,9 +148,12 @@
 		63422988283F463700FCDA10 /* FirebaseLogin */ = {
 			isa = PBXGroup;
 			children = (
+				63E9FE87283FC343001ECFBE /* Form */,
 				63422989283F463700FCDA10 /* AppDelegate.swift */,
 				6342298B283F463700FCDA10 /* SceneDelegate.swift */,
-				63E9FE65283F715B001ECFBE /* LoginView.swift */,
+				63E9FE78283F9F40001ECFBE /* ProfileView.swift */,
+				63E9FE75283F9EDB001ECFBE /* Login */,
+				63E9FE70283F9D32001ECFBE /* Registration */,
 				634229A2283F522300FCDA10 /* Base */,
 				6342299F283F4C2700FCDA10 /* Protocols */,
 				63422992283F463E00FCDA10 /* Assets.xcassets */,
@@ -87,28 +174,109 @@
 		634229A2283F522300FCDA10 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				634229A6283F582300FCDA10 /* Modifiers */,
-				634229A3283F522A00FCDA10 /* Views */,
+				634229A6283F582300FCDA10 /* PreviewModifiers */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		634229A3283F522A00FCDA10 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				634229A4283F524F00FCDA10 /* TextFieldView.swift */,
-				634229A9283F5A6700FCDA10 /* PasswordFieldView.swift */,
-				634229AB283F60F800FCDA10 /* ButtonView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		634229A6283F582300FCDA10 /* Modifiers */ = {
+		634229A6283F582300FCDA10 /* PreviewModifiers */ = {
 			isa = PBXGroup;
 			children = (
 				634229A7283F584100FCDA10 /* PreviewLayoutComponentModifier.swift */,
 			);
-			path = Modifiers;
+			path = PreviewModifiers;
+			sourceTree = "<group>";
+		};
+		63E9FE70283F9D32001ECFBE /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				63E9FE84283FC238001ECFBE /* Components */,
+				63E9FE67283F77D7001ECFBE /* RegisterView.swift */,
+				63E9FE6E283F998E001ECFBE /* RegisterViewModel.swift */,
+				63E9FE71283F9D54001ECFBE /* RegosterCoordinator.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		63E9FE75283F9EDB001ECFBE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				63E9FE65283F715B001ECFBE /* LoginView.swift */,
+				63E9FE73283F9EB9001ECFBE /* LoginViewModel.swift */,
+				63E9FE76283F9EEF001ECFBE /* Login Coordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		63E9FE84283FC238001ECFBE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		63E9FE87283FC343001ECFBE /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				631EBBEF2840809800D6255D /* Regex */,
+				63E9FE90283FCCC7001ECFBE /* Builder */,
+				63E9FE8D283FC42E001ECFBE /* Model */,
+				63E9FE88283FC34D001ECFBE /* Components */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		63E9FE88283FC34D001ECFBE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63E9FE89283FC387001ECFBE /* InputFields */,
+				63E9FE8C283FC3A9001ECFBE /* ProfileFields */,
+				63E9FE8B283FC39D001ECFBE /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		63E9FE89283FC387001ECFBE /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				634229A4283F524F00FCDA10 /* InputTextField.swift */,
+				634229A9283F5A6700FCDA10 /* InputPasswordField.swift */,
+				63E9FE69283F7F29001ECFBE /* DateFieldView.swift */,
+			);
+			path = InputFields;
+			sourceTree = "<group>";
+		};
+		63E9FE8B283FC39D001ECFBE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				634229AB283F60F800FCDA10 /* ButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		63E9FE8C283FC3A9001ECFBE /* ProfileFields */ = {
+			isa = PBXGroup;
+			children = (
+				63E9FE7A283FA166001ECFBE /* ProfileTextField.swift */,
+				63E9FE7E283FA552001ECFBE /* ProfilePasswordField.swift */,
+			);
+			path = ProfileFields;
+			sourceTree = "<group>";
+		};
+		63E9FE8D283FC42E001ECFBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63E9FE8E283FC442001ECFBE /* FormComponent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63E9FE90283FCCC7001ECFBE /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				63E9FE91283FCCE6001ECFBE /* FormContentBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +349,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631EBBF52840874000D6255D /* RegexFormItem.swift in Sources */,
 				634229AC283F60F800FCDA10 /* ButtonView.swift in Sources */,
-				634229AA283F5A6700FCDA10 /* PasswordFieldView.swift in Sources */,
+				63E9FE6A283F7F29001ECFBE /* DateFieldView.swift in Sources */,
+				634229AA283F5A6700FCDA10 /* InputPasswordField.swift in Sources */,
 				6342298A283F463700FCDA10 /* AppDelegate.swift in Sources */,
-				634229A5283F524F00FCDA10 /* TextFieldView.swift in Sources */,
+				63E9FE6F283F998E001ECFBE /* RegisterViewModel.swift in Sources */,
+				63E9FE72283F9D54001ECFBE /* RegosterCoordinator.swift in Sources */,
+				631EBBFE2840E6FC00D6255D /* FormState.swift in Sources */,
+				631EBBF8284087EF00D6255D /* ValidationError.swift in Sources */,
+				63E9FE68283F77D7001ECFBE /* RegisterView.swift in Sources */,
+				63E9FE92283FCCE6001ECFBE /* FormContentBuilder.swift in Sources */,
+				63E9FE79283F9F40001ECFBE /* ProfileView.swift in Sources */,
+				63E9FE77283F9EEF001ECFBE /* Login Coordinator.swift in Sources */,
+				631EBBFB28408CC500D6255D /* ValidationManager.swift in Sources */,
+				631EBBF2284080B000D6255D /* RegexPatterns.swift in Sources */,
+				634229A5283F524F00FCDA10 /* InputTextField.swift in Sources */,
+				63E9FE8F283FC442001ECFBE /* FormComponent.swift in Sources */,
+				63E9FE74283F9EB9001ECFBE /* LoginViewModel.swift in Sources */,
+				63E9FE7B283FA166001ECFBE /* ProfileTextField.swift in Sources */,
 				634229A8283F584100FCDA10 /* PreviewLayoutComponentModifier.swift in Sources */,
+				63E9FE7F283FA552001ECFBE /* ProfilePasswordField.swift in Sources */,
 				6342298C283F463700FCDA10 /* SceneDelegate.swift in Sources */,
 				63E9FE66283F715B001ECFBE /* LoginView.swift in Sources */,
 				634229A1283F4C3E00FCDA10 /* Coordinator Protocol.swift in Sources */,
