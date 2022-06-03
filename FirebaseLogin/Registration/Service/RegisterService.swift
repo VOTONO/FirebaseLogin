@@ -32,7 +32,7 @@ final class RegisterService: RegisterServiceProtocol {
                     .createUser(withEmail: user.email, password: user.password) { result, error in
                         if let error = error{
                             promise(.failure(error))
-                            print(error.localizedDescription)
+                            print("Error to create User: \(error.localizedDescription)")
                         } else {
                             if let uid = result?.user.uid {
                                 

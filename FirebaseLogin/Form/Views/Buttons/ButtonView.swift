@@ -35,6 +35,7 @@ struct ButtonView<Builder: FormBuilderProtocol>: View {
             RoundedRectangle(cornerRadius: component.cornerRadius)
                 .stroke(component.border, lineWidth: 2)
         )
+        
     }
 }
 

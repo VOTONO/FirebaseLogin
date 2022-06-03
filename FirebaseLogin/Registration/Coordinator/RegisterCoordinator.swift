@@ -12,7 +12,8 @@ class RegisterCoordinator: Coordinator {
     var rootViewController = UIViewController()
     
     func start() {
-        let view = RegisterView(viewModel: RegisterViewModel(registerService: RegisterService()))
+        let view = RegisterView(viewModel: RegisterViewModel(registerService: RegisterService()),
+                                formBuilder: RegisterFormBuilder())
         rootViewController = UIHostingController(rootView: view)
     }
 }

@@ -40,7 +40,7 @@ final class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
     }
     
     func register() {
-        
+        print("register with \(userDetails)")
         service
             .register(with: userDetails)
             .sink { [weak self] result in
@@ -48,6 +48,7 @@ final class RegisterViewModel: ObservableObject, RegisterViewModelProtocol {
                 switch result {
                 case .failure(let error):
                     self?.registerState = .fail(error: error)
+                    print(error.localizedDescription)
                 default: break
                 }
                 

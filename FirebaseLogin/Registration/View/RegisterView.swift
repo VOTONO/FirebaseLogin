@@ -11,7 +11,7 @@ struct RegisterView: View {
     
     
     @ObservedObject var viewModel: RegisterViewModel
-    @StateObject private var formBuilder = RegisterFormBuilder()
+    @StateObject  var formBuilder: RegisterFormBuilder
     
     var body: some View {
         ScrollView {
@@ -31,6 +31,7 @@ struct RegisterView: View {
                             .environmentObject(formBuilder)
                     case is ButtonFormComponent:
                         ButtonView<RegisterFormBuilder>(component: component as! ButtonFormComponent) { id in
+                            print("Tap register! form status: \(String(describing: formBuilder.formState))")
                             switch id {
                             case .submit:
                                 formBuilder.validate()
@@ -43,29 +44,21 @@ struct RegisterView: View {
                         EmptyView()
                     }
                 }
-                
-                HStack() {
-                    Button(action: {
-                        //TODO: Registration Screen
-                    }, label: {
-                        Text("Sign in")
-                            .font(.system(size: 16, weight: .semibold))
-                    })
-                }
             }
             .padding(.horizontal, 10)
-            .onChange(of: formBuilder.formState,
-                      perform: { state in
-                switch state {
-                case .valid(let user):
-                    viewModel.userDetails = user
-                    print("Register: \(user)")
-                case .failed(let error):
-                    print(error.description)
-                case .none:
-                    break
-                }
-            })
+        .onChange(of: formBuilder.formState,
+                  perform: { state in
+            switch state {
+            case .valid(let user):
+                viewModel.userDetails = user
+                viewModel.register()
+            case .failed(let error):
+                print("Invalide form")
+                print(error.description)
+            case .none:
+                break
+            }
+        })
         }
     }
 }
@@ -73,6 +66,6 @@ struct RegisterView: View {
 
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterView(viewModel: RegisterViewModel(registerService: RegisterService()))
+        RegisterView(viewModel: RegisterViewModel(registerService: RegisterService()), formBuilder: RegisterFormBuilder())
     }
 }

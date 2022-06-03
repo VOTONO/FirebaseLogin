@@ -7,12 +7,10 @@
 
 import Foundation
 
-struct UserLogin: Equatable {
-    let email: String
-    let password: String
+protocol User: Equatable {
+    var email: String { get }
+    var password: String { get }
 }
-
-//MARK: - Forms states
 
 enum RegisterFormState {
     case valid(user: UserDetails)

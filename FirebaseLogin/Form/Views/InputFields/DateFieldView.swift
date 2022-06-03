@@ -22,7 +22,7 @@ struct DateFieldView<Builder: FormBuilderProtocol>: View {
                     .font(.system(size: 14))
                     .foregroundColor(.red)
             }
-            DatePicker(component.title, selection: .constant(Date()), in: ...Date(), displayedComponents: .date)
+            DatePicker(component.title, selection: $date, in: ...Date(), displayedComponents: .date)
                 .frame(maxWidth: .infinity, minHeight: component.minHeight)
                 .padding(.leading, 15)
                 .background(
@@ -31,12 +31,14 @@ struct DateFieldView<Builder: FormBuilderProtocol>: View {
                             .stroke(error == nil ? component.strokeColor : Color.red)
                     })
         }
-        .onSubmit({
+        .onChange(of: date, perform: { _ in
             formBuilder.update(date, in: component)
             error = component
                 .validations
                 .compactMap { $0.validate(date) }
                 .first
+            print("Changed: \(date)")
+            print(error)
         })
     }
 }

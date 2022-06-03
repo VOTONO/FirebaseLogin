@@ -48,6 +48,8 @@ struct InputTextField<Builder: FormBuilderProtocol>: View {
                 .validations
                 .compactMap { $0.validate(text) }
                 .first
+            print("Changed: \(text)")
+            print(error)
         })
     }
 }

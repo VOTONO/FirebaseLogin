@@ -13,7 +13,8 @@ class LoginCoordinator: Coordinator {
     var rootViewController = UIViewController()
     
     func start() {
-        let view = LoginView(viewModel: LoginViewModel())
+        let view = LoginView(viewModel: LoginViewModel(service: LoginService()))
         rootViewController = UIHostingController(rootView: view)
     }
 }
+

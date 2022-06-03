@@ -51,8 +51,10 @@ class ApplicationCoordinator: Coordinator {
         let value: Bool = {
             switch sessionService.state {
             case .loggedIn:
+                print("User logedin")
                 return true
             case .loggedOut:
+                print("User logged out")
                 return false
             }
         }()

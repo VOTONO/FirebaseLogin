@@ -12,6 +12,8 @@ struct LoginView: View {
     @ObservedObject var viewModel: LoginViewModel
     @StateObject private var formBuilder = LoginFormBuilder()
     
+    @State var showRegister = false
+    
     var body: some View {
         VStack(spacing: 10) {
             Text("Login")
@@ -40,14 +42,18 @@ struct LoginView: View {
             }
             HStack() {
                 Button(action: {
-                    //TODO: Registration Screen
+                    showRegister.toggle()
                 }, label: {
                     Text("Create Account")
                         .font(.system(size: 16, weight: .semibold))
                 })
+                .sheet(isPresented: $showRegister) {
+                    RegisterView(viewModel: RegisterViewModel(registerService: RegisterService()),
+                                 formBuilder: RegisterFormBuilder())
+                }
                 Spacer()
                 Button(action: {
-                    //TODO: Registration Screen
+                    //TODO: Forgot password screen
                 }, label: {
                     Text("Forgot Password?")
                         .font(.system(size: 16, weight: .semibold))
@@ -61,7 +67,7 @@ struct LoginView: View {
             switch state {
             case .valid(let user):
                 viewModel.userLogin = user
-                print("Login: \(user)")
+                viewModel.login()
             case .failed(let error):
                 print(error.description)
             case .none:
@@ -73,6 +79,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewModel: LoginViewModel())
+        LoginView(viewModel: LoginViewModel(service: LoginService()))
     }
 }

@@ -13,7 +13,7 @@ struct UserDetails: Equatable {
     let lastName: String
     let password: String
     let email: String
-    let birthday: Date
+    let birthday: String
 }
 
 extension UserDetails {
@@ -22,6 +22,6 @@ extension UserDetails {
                   lastName: "",
                   password: "",
                   email: "",
-                  birthday: Date() )
+                  birthday: "" )
     }
 }

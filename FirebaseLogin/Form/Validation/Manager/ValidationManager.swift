@@ -20,14 +20,13 @@ struct RegexValidationManager: ValidationManagerProtocol {
     }
     
     func validate(_ value: Any) -> ValidationError? {
-        
         let value = (value as? String) ?? ""
         
         for item in items {
             let regex = try? NSRegularExpression(pattern: item.pattern)
             let range = NSRange(location: 0, length: value.count)
             
-            if regex?.firstMatch(in: value, range: range) == nil {
+            if regex?.firstMatch(in: value, options: [], range: range) == nil {
                 return item.error
             }
         }
@@ -40,7 +39,6 @@ struct DateValidationManager: ValidationManagerProtocol {
     private let ageLimit: Int = 18
     
     func validate(_ value: Any) -> ValidationError? {
-        
         guard let date = value as? Date else {
             return ValidationError.custom(message: "Invalid value passed")
         }

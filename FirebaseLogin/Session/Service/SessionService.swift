@@ -44,13 +44,17 @@ extension SessionService {
         handler = Auth
             .auth()
             .addStateDidChangeListener({ [weak self] result, user in
+                print("State changed to: \(self?.state)")
                 guard let self = self else {return}
                 self.state = user == nil ? .loggedOut : .loggedIn
+                if let uid = user?.uid {
+                    self.handleRefresh(with: uid)
+                }
             })
     }
     
     func handleRefresh(with uid: String) {
-        
+        print("Refresh user with: \(uid)")
         Database
             .database()
             .reference()

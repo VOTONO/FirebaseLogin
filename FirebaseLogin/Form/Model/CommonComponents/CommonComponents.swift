@@ -21,7 +21,7 @@ extension TextFormComponent {
                                              sfSymbol: nil,
                                              validations: [RegexValidationManager.simpleValidator])
     
-    static let lastname = TextFormComponent(id: .firstName,
+    static let lastname = TextFormComponent(id: .lastName,
                                             placeholder: "Last Name",
                                             keyboardType: .default,
                                             sfSymbol: nil,
