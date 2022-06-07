@@ -13,6 +13,8 @@ import Combine
 enum RegisterKeys: String {
     case firstName
     case lastName
+    case email
+    case password
     case birthday
 }
 

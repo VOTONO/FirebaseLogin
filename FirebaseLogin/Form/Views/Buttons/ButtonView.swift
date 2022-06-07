@@ -7,33 +7,45 @@
 
 import SwiftUI
 
-struct ButtonView<Builder: FormBuilderProtocol>: View {
+struct ButtonView: View {
     
-    typealias ActionHandler = (_ formId: FieldId) -> Void
+    let title: String
+    let minHeight: CGFloat
+    let cornerRadius: CGFloat
+    let background: Color
+    let foreground: Color
+    let border: Color
+    let handler: () -> ()
     
-    let component: ButtonFormComponent
-    let handler: ActionHandler
     
-    @EnvironmentObject var formBuilder: Builder
-    
-    init(component: ButtonFormComponent,
-         handler: @escaping ButtonView.ActionHandler) {
-        self.component = component
+    init(title: String,
+         minHeight: CGFloat = 40,
+         cornerRadius: CGFloat = 5,
+         backgroung: Color = .blue,
+         foreground: Color = .white,
+         border: Color = .blue,
+         handler: @escaping () -> ()) {
+        self.title = title
+        self.minHeight = minHeight
+        self.cornerRadius = cornerRadius
+        self.background = backgroung
+        self.foreground = foreground
+        self.border = border
         self.handler = handler
     }
 
     var body: some View {
-        Button(component.title) {
-            handler(component.fieldId)
+        Button(title) {
+            handler()
         }
-        .frame(maxWidth: .infinity, minHeight: component.minHeight)
-        .background(component.background)
-        .foregroundColor(component.foreground)
+        .frame(maxWidth: .infinity, minHeight: minHeight)
+        .background(background)
+        .foregroundColor(foreground)
         .font(.system(size: 18, weight: .bold))
-        .cornerRadius(component.cornerRadius)
+        .cornerRadius(cornerRadius)
         .overlay(
-            RoundedRectangle(cornerRadius: component.cornerRadius)
-                .stroke(component.border, lineWidth: 2)
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .stroke(border, lineWidth: 2)
         )
         
     }
@@ -41,9 +53,7 @@ struct ButtonView<Builder: FormBuilderProtocol>: View {
 
 struct LoginButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView<RegisterFormBuilder>(component: ButtonFormComponent(id: .submit,
-                                                  title: "Register")) { _ in }
-            .environmentObject(RegisterFormBuilder())
-            .preview(with: "Register")
+        ButtonView(title: "Registration") {
+        }
     }
 }

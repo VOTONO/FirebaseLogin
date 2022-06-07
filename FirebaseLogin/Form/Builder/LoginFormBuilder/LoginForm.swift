@@ -13,8 +13,7 @@ struct LoginForm {
         let form: [FormComponent] = [
             
             TextFormComponent.email,
-            PasswordFormComponent.password,
-            ButtonFormComponent.login]
+            PasswordFormComponent.password]
         return form
     }
 }

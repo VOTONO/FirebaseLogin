@@ -44,13 +44,3 @@ extension DateFormComponent {
                                             validations: [DateValidationManager()])
     
 }
-
-extension ButtonFormComponent {
-    
-    static let register = ButtonFormComponent(id: .submit,
-                                              title: "Register")
-    
-    static let login = ButtonFormComponent(id: .submit,
-                                              title: "Login")
-    
-}

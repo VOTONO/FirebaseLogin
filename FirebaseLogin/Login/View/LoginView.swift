@@ -15,31 +15,26 @@ struct LoginView: View {
     @State var showRegister = false
     
     var body: some View {
-        VStack(spacing: 10) {
-            Text("Login")
-                .font(.system(size: 26, weight: .bold))
-            ForEach(formBuilder.content) { component in
-                switch component {
-                case is TextFormComponent:
-                    InputTextField<LoginFormBuilder>(component: component as! TextFormComponent)
-                        .environmentObject(formBuilder)
-                case is PasswordFormComponent:
-                    InputPasswordField<LoginFormBuilder>(component: component as! PasswordFormComponent)
-                        .environmentObject(formBuilder)
-                case is ButtonFormComponent:
-                    ButtonView<LoginFormBuilder>(component: component as! ButtonFormComponent) { id in
-                        switch id {
-                        case .submit:
-                            formBuilder.validate()
-                        default:
-                            break
-                        }
+        VStack(spacing: 20) {
+            VStack(spacing: 10) {
+                Text("Login")
+                    .font(.system(size: 26, weight: .bold))
+                ForEach(formBuilder.content) { component in
+                    switch component {
+                    case is TextFormComponent:
+                        InputTextField<LoginFormBuilder>(component: component as! TextFormComponent)
+                            .environmentObject(formBuilder)
+                    case is PasswordFormComponent:
+                        InputPasswordField<LoginFormBuilder>(component: component as! PasswordFormComponent)
+                            .environmentObject(formBuilder)
+                    default:
+                        EmptyView()
                     }
-                default:
-                    EmptyView()
-                    
                 }
+                
             }
+            ButtonView(title: "Login",
+                       handler: formBuilder.validate)
             HStack() {
                 Button(action: {
                     showRegister.toggle()
@@ -59,7 +54,6 @@ struct LoginView: View {
                         .font(.system(size: 16, weight: .semibold))
                 })
             }
-            .padding(.top, 5)
         }
         .padding(.horizontal, 10)
         .onChange(of: formBuilder.formState,

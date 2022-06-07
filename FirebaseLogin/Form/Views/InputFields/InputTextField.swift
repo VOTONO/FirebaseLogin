@@ -37,7 +37,7 @@ struct InputTextField<Builder: FormBuilderProtocol>: View {
                                 .padding(.leading, 5)
                                 .foregroundColor(Color.gray.opacity(0.5))
                         }
-                        RoundedRectangle(cornerRadius: 10,
+                        RoundedRectangle(cornerRadius: component.cornerRadius,
                                          style: .continuous)
                         .stroke(error == nil ? component.strokeColor : Color.red)
                     })
@@ -56,14 +56,11 @@ struct InputTextField<Builder: FormBuilderProtocol>: View {
 
 struct InputTextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        InputTextField<RegisterFormBuilder>( component: TextFormComponent(id: .email,
-                                                     placeholder: "Email",
-                                                     keyboardType: .emailAddress, minHeight: 40,
-                                                     cornerRadius: 15,
-                                                     strokeColor: .gray.opacity(0.5),
-                                                     sfSymbol: "envelope"))
+        InputTextField<RegisterFormBuilder>( component: TextFormComponent.firstName)
         .environmentObject(RegisterFormBuilder())
-        .preview(with: "With symbol")
-        
+        .preview(with: "Register")
+        InputTextField<ProfileFormBuilder>(component: TextFormComponent.profileFirstName)
+            .environmentObject(RegisterFormBuilder())
+            .preview(with: "Profile")
     }
 }

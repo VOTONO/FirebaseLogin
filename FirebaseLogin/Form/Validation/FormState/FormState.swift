@@ -53,3 +53,24 @@ extension LoginFormState: Equatable {
         }
     }
 }
+
+enum ProfileFormState: Equatable {
+    case valid(user: UserDetails)
+    case failed(error: ValidationError)
+}
+
+extension ProfileFormState {
+    
+    static func == (lhs: ProfileFormState, rhs: ProfileFormState) -> Bool {
+        switch (lhs, rhs) {
+        case (.valid(user: let lhsType),
+              .valid(user: let rhsType)):
+            return lhsType == rhsType
+        case (.failed(error: let lhsType),
+              .failed(error: let rhsType)):
+        return lhsType.description == rhsType.description
+        default:
+            return false
+        }
+    }
+}

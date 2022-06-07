@@ -29,34 +29,25 @@ struct RegisterView: View {
                     case is PasswordFormComponent:
                         InputPasswordField<RegisterFormBuilder>(component: component as! PasswordFormComponent)
                             .environmentObject(formBuilder)
-                    case is ButtonFormComponent:
-                        ButtonView<RegisterFormBuilder>(component: component as! ButtonFormComponent) { id in
-                            print("Tap register! form status: \(String(describing: formBuilder.formState))")
-                            switch id {
-                            case .submit:
-                                formBuilder.validate()
-                            default:
-                                break
-                            }
-                        }
-                            .environmentObject(formBuilder)
                     default:
                         EmptyView()
                     }
                 }
+                ButtonView(title: "Register",
+                           handler: formBuilder.validate)
             }
             .padding(.horizontal, 10)
-        .onChange(of: formBuilder.formState,
+            .onChange(of: formBuilder.formState,
                   perform: { state in
-            switch state {
-            case .valid(let user):
-                viewModel.userDetails = user
-                viewModel.register()
-            case .failed(let error):
-                print("Invalide form")
-                print(error.description)
-            case .none:
-                break
+                    switch state {
+                    case .valid(let user):
+                        viewModel.userDetails = user
+                        viewModel.register()
+                    case .failed(let error):
+                        print("Invalide form")
+                        print(error.description)
+                    case .none:
+                        break
             }
         })
         }

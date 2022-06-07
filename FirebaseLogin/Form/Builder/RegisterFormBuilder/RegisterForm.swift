@@ -15,8 +15,8 @@ struct RegisterForm {
             PasswordFormComponent.password,
             TextFormComponent.firstName,
             TextFormComponent.lastname,
-            DateFormComponent.birthday,
-            ButtonFormComponent.register]
+            DateFormComponent.birthday]
+            //ButtonFormComponent.register]
         return form
     }
 
