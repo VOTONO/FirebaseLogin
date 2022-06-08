@@ -24,7 +24,7 @@ struct RegisterView: View {
                         InputTextField<RegisterFormBuilder>(component: component as! TextFormComponent)
                             .environmentObject(formBuilder)
                     case is DateFormComponent:
-                        DateFieldView<RegisterFormBuilder>(component: component as! DateFormComponent)
+                        InputDateField<RegisterFormBuilder>(component: component as! DateFormComponent)
                             .environmentObject(formBuilder)
                     case is PasswordFormComponent:
                         InputPasswordField<RegisterFormBuilder>(component: component as! PasswordFormComponent)

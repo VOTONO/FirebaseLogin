@@ -24,6 +24,10 @@
 		63934AAF28450907008E8A1D /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63934AAE28450907008E8A1D /* RegisterService.swift */; };
 		63934AB628451B7B008E8A1D /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63934AB528451B7B008E8A1D /* SessionUserDetails.swift */; };
 		63934AB928451BD2008E8A1D /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63934AB828451BD2008E8A1D /* SessionService.swift */; };
+		63A6FA6F284F81EB006926A3 /* ProfileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6FA6E284F81EB006926A3 /* ProfileTextField.swift */; };
+		63A6FA73284F83CD006926A3 /* ProfileTextComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6FA72284F83CD006926A3 /* ProfileTextComponent.swift */; };
+		63A6FA75284F8686006926A3 /* ProfilePasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6FA74284F8686006926A3 /* ProfilePasswordField.swift */; };
+		63A6FA77284F86DD006926A3 /* ProfilePasswordComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6FA76284F86DD006926A3 /* ProfilePasswordComponent.swift */; };
 		63B562F72847455400187674 /* RegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B562F62847455400187674 /* RegisterForm.swift */; };
 		63B562F9284748D800187674 /* CommonValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B562F8284748D800187674 /* CommonValidations.swift */; };
 		63B562FB28474D5C00187674 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B562FA28474D5C00187674 /* LoginForm.swift */; };
@@ -44,11 +48,13 @@
 		63B56343284A127D00187674 /* ProfileComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B56342284A127D00187674 /* ProfileComponents.swift */; };
 		63E9FE66283F715B001ECFBE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE65283F715B001ECFBE /* LoginView.swift */; };
 		63E9FE68283F77D7001ECFBE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE67283F77D7001ECFBE /* RegisterView.swift */; };
-		63E9FE6A283F7F29001ECFBE /* DateFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE69283F7F29001ECFBE /* DateFieldView.swift */; };
+		63E9FE6A283F7F29001ECFBE /* InputDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE69283F7F29001ECFBE /* InputDateField.swift */; };
 		63E9FE6F283F998E001ECFBE /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE6E283F998E001ECFBE /* RegisterViewModel.swift */; };
 		63E9FE74283F9EB9001ECFBE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE73283F9EB9001ECFBE /* LoginViewModel.swift */; };
 		63E9FE8F283FC442001ECFBE /* FormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE8E283FC442001ECFBE /* FormComponent.swift */; };
 		63E9FE92283FCCE6001ECFBE /* FormBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE91283FCCE6001ECFBE /* FormBuilderProtocol.swift */; };
+		63F7D2B628506ACA009B3E35 /* ProfileDateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D2B528506ACA009B3E35 /* ProfileDateComponent.swift */; };
+		63F7D2B828506BE4009B3E35 /* ProfileDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7D2B728506BE4009B3E35 /* ProfileDateField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +75,10 @@
 		63934AAE28450907008E8A1D /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		63934AB528451B7B008E8A1D /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
 		63934AB828451BD2008E8A1D /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		63A6FA6E284F81EB006926A3 /* ProfileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTextField.swift; sourceTree = "<group>"; };
+		63A6FA72284F83CD006926A3 /* ProfileTextComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTextComponent.swift; sourceTree = "<group>"; };
+		63A6FA74284F8686006926A3 /* ProfilePasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePasswordField.swift; sourceTree = "<group>"; };
+		63A6FA76284F86DD006926A3 /* ProfilePasswordComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePasswordComponent.swift; sourceTree = "<group>"; };
 		63B562F62847455400187674 /* RegisterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForm.swift; sourceTree = "<group>"; };
 		63B562F8284748D800187674 /* CommonValidations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonValidations.swift; sourceTree = "<group>"; };
 		63B562FA28474D5C00187674 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
@@ -89,11 +99,13 @@
 		63B56342284A127D00187674 /* ProfileComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileComponents.swift; sourceTree = "<group>"; };
 		63E9FE65283F715B001ECFBE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		63E9FE67283F77D7001ECFBE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		63E9FE69283F7F29001ECFBE /* DateFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFieldView.swift; sourceTree = "<group>"; };
+		63E9FE69283F7F29001ECFBE /* InputDateField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDateField.swift; sourceTree = "<group>"; };
 		63E9FE6E283F998E001ECFBE /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		63E9FE73283F9EB9001ECFBE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		63E9FE8E283FC442001ECFBE /* FormComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormComponent.swift; sourceTree = "<group>"; };
 		63E9FE91283FCCE6001ECFBE /* FormBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormBuilderProtocol.swift; sourceTree = "<group>"; };
+		63F7D2B528506ACA009B3E35 /* ProfileDateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDateComponent.swift; sourceTree = "<group>"; };
+		63F7D2B728506BE4009B3E35 /* ProfileDateField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDateField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +297,52 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		63A6FA6B284F81AB006926A3 /* ProfileFields */ = {
+			isa = PBXGroup;
+			children = (
+				63A6FA6E284F81EB006926A3 /* ProfileTextField.swift */,
+				63A6FA74284F8686006926A3 /* ProfilePasswordField.swift */,
+				63F7D2B728506BE4009B3E35 /* ProfileDateField.swift */,
+			);
+			path = ProfileFields;
+			sourceTree = "<group>";
+		};
+		63A6FA70284F82E8006926A3 /* ProfileFormComponents */ = {
+			isa = PBXGroup;
+			children = (
+				63A6FA72284F83CD006926A3 /* ProfileTextComponent.swift */,
+				63A6FA76284F86DD006926A3 /* ProfilePasswordComponent.swift */,
+				63F7D2B528506ACA009B3E35 /* ProfileDateComponent.swift */,
+			);
+			path = ProfileFormComponents;
+			sourceTree = "<group>";
+		};
+		63A6FA71284F8321006926A3 /* InputFormComponents */ = {
+			isa = PBXGroup;
+			children = (
+				63B5630228475D2100187674 /* TextFormComponent.swift */,
+				63B5630428475D4C00187674 /* PasswordFormComponent.swift */,
+				63B5630628475D8700187674 /* DateFormComponent.swift */,
+			);
+			path = InputFormComponents;
+			sourceTree = "<group>";
+		};
+		63A6FA78284F9101006926A3 /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				63B5630F28486D7700187674 /* RegisterComponents.swift */,
+			);
+			path = InputFields;
+			sourceTree = "<group>";
+		};
+		63A6FA79284F910E006926A3 /* ProfileFields */ = {
+			isa = PBXGroup;
+			children = (
+				63B56342284A127D00187674 /* ProfileComponents.swift */,
+			);
+			path = ProfileFields;
+			sourceTree = "<group>";
+		};
 		63B562FC28474F6200187674 /* RegisterFormBuilder */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,13 +369,13 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		63B5630E28486D4700187674 /* RegisterComponents */ = {
+		63B5630E28486D4700187674 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				63B5630F28486D7700187674 /* RegisterComponents.swift */,
-				63B56342284A127D00187674 /* ProfileComponents.swift */,
+				63A6FA79284F910E006926A3 /* ProfileFields */,
+				63A6FA78284F9101006926A3 /* InputFields */,
 			);
-			path = RegisterComponents;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		63B56311284870F600187674 /* View */ = {
@@ -414,6 +472,7 @@
 		63E9FE88283FC34D001ECFBE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				63A6FA6B284F81AB006926A3 /* ProfileFields */,
 				63E9FE89283FC387001ECFBE /* InputFields */,
 				63E9FE8B283FC39D001ECFBE /* Buttons */,
 			);
@@ -425,7 +484,7 @@
 			children = (
 				634229A4283F524F00FCDA10 /* InputTextField.swift */,
 				634229A9283F5A6700FCDA10 /* InputPasswordField.swift */,
-				63E9FE69283F7F29001ECFBE /* DateFieldView.swift */,
+				63E9FE69283F7F29001ECFBE /* InputDateField.swift */,
 			);
 			path = InputFields;
 			sourceTree = "<group>";
@@ -442,10 +501,9 @@
 			isa = PBXGroup;
 			children = (
 				63E9FE8E283FC442001ECFBE /* FormComponent.swift */,
-				63B5630228475D2100187674 /* TextFormComponent.swift */,
-				63B5630428475D4C00187674 /* PasswordFormComponent.swift */,
-				63B5630628475D8700187674 /* DateFormComponent.swift */,
-				63B5630E28486D4700187674 /* RegisterComponents */,
+				63A6FA71284F8321006926A3 /* InputFormComponents */,
+				63A6FA70284F82E8006926A3 /* ProfileFormComponents */,
+				63B5630E28486D4700187674 /* Extensions */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -540,17 +598,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B56334284A055700187674 /* AppDelegate.swift in Sources */,
+				63F7D2B628506ACA009B3E35 /* ProfileDateComponent.swift in Sources */,
 				63B5630528475D4C00187674 /* PasswordFormComponent.swift in Sources */,
 				631EBBF52840874000D6255D /* RegexFormItem.swift in Sources */,
 				63B5633F284A121100187674 /* ProfileFormBuilder.swift in Sources */,
 				634229AC283F60F800FCDA10 /* ButtonView.swift in Sources */,
-				63E9FE6A283F7F29001ECFBE /* DateFieldView.swift in Sources */,
+				63E9FE6A283F7F29001ECFBE /* InputDateField.swift in Sources */,
 				63B56337284A05E600187674 /* ProfileView.swift in Sources */,
+				63A6FA77284F86DD006926A3 /* ProfilePasswordComponent.swift in Sources */,
+				63F7D2B828506BE4009B3E35 /* ProfileDateField.swift in Sources */,
 				63B562FF2847520200187674 /* RegisterFormBuilder.swift in Sources */,
 				634229AA283F5A6700FCDA10 /* InputPasswordField.swift in Sources */,
 				63E9FE6F283F998E001ECFBE /* RegisterViewModel.swift in Sources */,
 				63934AAD284508AA008E8A1D /* UserDetails.swift in Sources */,
+				63A6FA6F284F81EB006926A3 /* ProfileTextField.swift in Sources */,
 				63B562F72847455400187674 /* RegisterForm.swift in Sources */,
+				63A6FA75284F8686006926A3 /* ProfilePasswordField.swift in Sources */,
 				631EBBFE2840E6FC00D6255D /* FormState.swift in Sources */,
 				631EBBF8284087EF00D6255D /* ValidationError.swift in Sources */,
 				63B563012847529200187674 /* LoginFormBuilder.swift in Sources */,
@@ -559,6 +622,7 @@
 				63E9FE68283F77D7001ECFBE /* RegisterView.swift in Sources */,
 				63E9FE92283FCCE6001ECFBE /* FormBuilderProtocol.swift in Sources */,
 				63B563302849C0C300187674 /* LoginService.swift in Sources */,
+				63A6FA73284F83CD006926A3 /* ProfileTextComponent.swift in Sources */,
 				631EBBFB28408CC500D6255D /* ValidationManager.swift in Sources */,
 				63934AB928451BD2008E8A1D /* SessionService.swift in Sources */,
 				631EBBF2284080B000D6255D /* RegexPatterns.swift in Sources */,

@@ -16,7 +16,7 @@ final class DateFormComponent: FormComponent {
     
     init(id: FieldId,
          title: String,
-         minHeight: CGFloat = 40,
+         minHeight: CGFloat = 35,
          cornerRadius: CGFloat = 10,
          strokeColor: Color = .gray.opacity(0.25),
          validations: [ValidationManagerProtocol] = []) {

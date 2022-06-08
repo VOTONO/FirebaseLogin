@@ -1,15 +1,14 @@
 //
-//  DateFieldView.swift
+//  ProfileDateField.swift
 //  FirebaseLogin
 //
-//  Created by Mac User on 26.05.2022.
+//  Created by Mac User on 08.06.2022.
 //
 
 import SwiftUI
 
-struct DateFieldView<Builder: FormBuilderProtocol>: View {
-    
-    let component: DateFormComponent
+struct ProfileDateField<Builder: FormBuilderProtocol>: View {
+    let component: ProfileDateComponent
     
     @EnvironmentObject var formBuilder: Builder
     @State private var date = Date()
@@ -23,13 +22,6 @@ struct DateFieldView<Builder: FormBuilderProtocol>: View {
                     .foregroundColor(.red)
             }
             DatePicker(component.title, selection: $date, in: ...Date(), displayedComponents: .date)
-                .frame(maxWidth: .infinity, minHeight: component.minHeight)
-                .padding(.leading, 15)
-                .background(
-                    ZStack {
-                        RoundedRectangle(cornerRadius: component.cornerRadius, style: .continuous)
-                            .stroke(error == nil ? component.strokeColor : Color.red)
-                    })
         }
         .onChange(of: date, perform: { _ in
             formBuilder.update(date, in: component)
@@ -43,11 +35,9 @@ struct DateFieldView<Builder: FormBuilderProtocol>: View {
     }
 }
 
-struct DateFieldView_Previews: PreviewProvider {
+struct ProfileDateField_Previews: PreviewProvider {
     static var previews: some View {
-        DateFieldView<RegisterFormBuilder>(component: DateFormComponent(id: .date,
-                                                   title: "Birthday"))
-            .environmentObject(RegisterFormBuilder())
-            .preview(with: "Birthdate")
+        ProfileDateField<ProfileFormBuilder>(component: ProfileDateComponent(id: .date, title: "Birthday"))
+            .preview(with: "Profile birthday")
     }
 }

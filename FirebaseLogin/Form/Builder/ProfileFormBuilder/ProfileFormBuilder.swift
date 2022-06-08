@@ -12,6 +12,16 @@ final class ProfileFormBuilder: ObservableObject, FormBuilderProtocol {
     @Published private(set) var formState: ProfileFormState?
 
     private(set) lazy var content: [FormComponent] = ProfileForm.build()
+    private(set) lazy var accountInfo: [FormComponent] = {
+        let info = content
+            .filter{ $0.fieldId == .email || $0.fieldId == .password}
+        return info
+    }()
+    private(set) lazy var userInfo: [FormComponent] = {
+        let info = content
+            .filter{ $0.fieldId == .firstName || $0.fieldId == .lastName || $0.fieldId == .date}
+        return info
+    }()
 
     
     func update(_ value: Any, in component: FormComponentProtocol) {

@@ -59,7 +59,7 @@ struct InputTextFieldView_Previews: PreviewProvider {
         InputTextField<RegisterFormBuilder>( component: TextFormComponent.firstName)
         .environmentObject(RegisterFormBuilder())
         .preview(with: "Register")
-        InputTextField<ProfileFormBuilder>(component: TextFormComponent.profileFirstName)
+        ProfileTextField<ProfileFormBuilder>(component: ProfileTextComponent.firstName)
             .environmentObject(RegisterFormBuilder())
             .preview(with: "Profile")
     }
