@@ -6,14 +6,23 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ProfileTextField<Builder: FormBuilderProtocol>: View {
     
     let component: ProfileTextComponent
+
     @EnvironmentObject var formBuilder: Builder
 
-    @State private var text = ""
+    @State private var text: String = "Default"
     @State private var error: ValidationError?
+    
+    init(component: ProfileTextComponent) {
+        print("Profile text field init value: \(component.value)")
+        self.component = component
+        self._text = State(wrappedValue: component.value as? String ?? "")
+    }
+    
     
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
@@ -34,6 +43,10 @@ struct ProfileTextField<Builder: FormBuilderProtocol>: View {
             print("Changed: \(text)")
             print(error)
         })
+        .onAppear {
+            print("On Apperar")
+            text = component.value as? String ?? ""
+        }
     }
 }
 

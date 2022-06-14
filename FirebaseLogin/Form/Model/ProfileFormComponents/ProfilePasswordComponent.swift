@@ -19,6 +19,6 @@ final class ProfilePasswordComponent: FormComponent {
          validations: [ValidationManagerProtocol] = []) {
         self.placeholder = placeholder
         self.keyboardType = keyboardType
-        super.init(id, validations: validations)
+        super.init(id, validations: validations, value: "")
     }
 }

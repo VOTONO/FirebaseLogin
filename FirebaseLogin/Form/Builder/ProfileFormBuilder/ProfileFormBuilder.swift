@@ -5,14 +5,16 @@
 //  Created by Mac User on 03.06.2022.
 //
 
-import Foundation
+import SwiftUI
 
 final class ProfileFormBuilder: ObservableObject, FormBuilderProtocol {
     
     @Published private(set) var formState: ProfileFormState?
+    @State var isUpdated: Bool = false
 
-    private(set) lazy var content: [FormComponent] = ProfileForm.build()
+    private(set) var content: [FormComponent] = ProfileForm.build()
     private(set) lazy var accountInfo: [FormComponent] = {
+        
         let info = content
             .filter{ $0.fieldId == .email || $0.fieldId == .password}
         return info

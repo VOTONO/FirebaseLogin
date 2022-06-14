@@ -12,11 +12,10 @@ struct ProfileForm {
     static func build() -> [FormComponent] {
         let form: [FormComponent] = [
 
-            ProfileTextComponent.email,
-            ProfilePasswordComponent.password,
             ProfileTextComponent.firstName,
             ProfileTextComponent.lastname,
-            ProfileDateComponent.birthday]
+            ProfileDateComponent.birthday,
+            ProfileTextComponent.email]
         
         return form
     }

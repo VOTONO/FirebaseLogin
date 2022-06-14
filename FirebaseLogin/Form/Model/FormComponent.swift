@@ -7,12 +7,13 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 protocol FormComponentProtocol {
     var id: UUID {get}
     var fieldId: FieldId {get}
     var validations: [ValidationManagerProtocol] {get}
-    var value: Any? {get}
+    var value: Any {get}
 }
 
 class FormComponent: FormComponentProtocol, Identifiable {
@@ -20,11 +21,12 @@ class FormComponent: FormComponentProtocol, Identifiable {
     let id = UUID()
     let fieldId: FieldId
     var validations: [ValidationManagerProtocol]
-    var value: Any?
+    var value: Any
     
-    init(_ id: FieldId, validations: [ValidationManagerProtocol] = []) {
+    init(_ id: FieldId, validations: [ValidationManagerProtocol] = [], value: Any) {
         self.fieldId = id
         self.validations = validations
+        self.value = value
     }
 }
 

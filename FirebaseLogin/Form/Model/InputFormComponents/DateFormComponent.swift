@@ -24,6 +24,6 @@ final class DateFormComponent: FormComponent {
         self.minHeight = minHeight
         self.cornerRadius = cornerRadius
         self.strokeColor = strokeColor
-        super.init(id, validations: validations)
+        super.init(id, validations: validations, value: "")
     }
 }

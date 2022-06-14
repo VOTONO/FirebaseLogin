@@ -11,8 +11,15 @@ struct ProfileDateField<Builder: FormBuilderProtocol>: View {
     let component: ProfileDateComponent
     
     @EnvironmentObject var formBuilder: Builder
+    
     @State private var date = Date()
     @State private var error: ValidationError?
+    
+    init(component: ProfileDateComponent) {
+        print("Profile field init value: \(component.value)")
+        self.component = component
+        self._date = State(wrappedValue: component.value as? Date ?? Date()) 
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
@@ -23,14 +30,19 @@ struct ProfileDateField<Builder: FormBuilderProtocol>: View {
             }
             DatePicker(component.title, selection: $date, in: ...Date(), displayedComponents: .date)
         }
+        .onChange(of: date, perform: { newValue in
+            formBuilder.update(date, in: component)
+            error = component
+                .validations
+                .compactMap { $0.validate(date) }
+                .first
+        })
         .onChange(of: date, perform: { _ in
             formBuilder.update(date, in: component)
             error = component
                 .validations
                 .compactMap { $0.validate(date) }
                 .first
-            print("Changed: \(date)")
-            print(error)
         })
     }
 }

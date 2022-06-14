@@ -26,13 +26,22 @@ struct Firebase_User_Account_ManagementApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                switch sessionService.state {
+                switch sessionService.isConnectingServer {
+                case true:
+                    ConnectingServerView()
+                case false:
+                    switch sessionService.sessionState {
                     case .loggedIn:
-                    ProfileView(viewModel: ProfileViewModel(), formBuilder: ProfileFormBuilder(), service: sessionService)
-                    case .loggedOut:
-                        LoginView(viewModel: LoginViewModel(service: LoginService()))
-                    }
-                
+                        switch sessionService.isRefreshingUser {
+                        case true:
+                            UserLoadingView()
+                        case false:
+                            ProfileView(viewModel: ProfileViewModel(sessionService: sessionService, formBuilder: ProfileFormBuilder()))
+                        }
+                        case .loggedOut:
+                            LoginView(viewModel: LoginViewModel(service: LoginService()))
+                        }
+                }
             }
         }
     }

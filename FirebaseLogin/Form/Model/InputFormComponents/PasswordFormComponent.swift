@@ -30,6 +30,6 @@ final class PasswordFormComponent: FormComponent {
         self.cornerRadius = cornerRadius
         self.strokeColor = strokeColor
         self.sfSymbol = sfSymbol
-        super.init(id, validations: validations)
+        super.init(id, validations: validations, value: "")
     }
 }

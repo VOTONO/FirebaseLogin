@@ -9,11 +9,11 @@ import Foundation
 
 struct UserDetails: Equatable {
 
-    let firstName: String
-    let lastName: String
-    let password: String
-    let email: String
-    let birthday: String
+    var firstName: String
+    var lastName: String
+    var password: String
+    var email: String
+    var birthday: String
 }
 
 extension UserDetails {

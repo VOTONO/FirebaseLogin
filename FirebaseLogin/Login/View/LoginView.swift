@@ -47,12 +47,12 @@ struct LoginView: View {
                                  formBuilder: RegisterFormBuilder())
                 }
                 Spacer()
-                Button(action: {
-                    //TODO: Forgot password screen
-                }, label: {
-                    Text("Forgot Password?")
-                        .font(.system(size: 16, weight: .semibold))
-                })
+              //Button(action: {
+              //    //TODO: Forgot password screen
+              //}, label: {
+              //    Text("Forgot Password?")
+              //        .font(.system(size: 16, weight: .semibold))
+              //})
             }
         }
         .padding(.horizontal, 10)

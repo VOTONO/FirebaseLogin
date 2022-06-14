@@ -41,11 +41,9 @@ final class RegisterFormBuilder: ObservableObject, FormBuilderProtocol {
            let password = formComponents.first(where: { $0.fieldId == .password })?.value as? String,
            let birthday = formComponents.first(where: { $0.fieldId == .date })?.value as? Date {
             
-            print("Date before format: \(birthday)")
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "YY/MM/dd"
             let stringDate = dateFormatter.string(from: birthday)
-            print("Date after format: \(stringDate)")
             let newUser = UserDetails(firstName: firstName,
                                lastName: lastName,
                                password: password,

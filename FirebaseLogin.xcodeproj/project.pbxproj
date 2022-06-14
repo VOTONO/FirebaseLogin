@@ -46,6 +46,8 @@
 		63B5633F284A121100187674 /* ProfileFormBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5633E284A121100187674 /* ProfileFormBuilder.swift */; };
 		63B56341284A121A00187674 /* ProfileForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B56340284A121A00187674 /* ProfileForm.swift */; };
 		63B56343284A127D00187674 /* ProfileComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B56342284A127D00187674 /* ProfileComponents.swift */; };
+		63D4D16928534F1700C618A3 /* UserLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4D16828534F1700C618A3 /* UserLoadingView.swift */; };
+		63D4D16B2853501A00C618A3 /* ConnectingServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4D16A2853501A00C618A3 /* ConnectingServerView.swift */; };
 		63E9FE66283F715B001ECFBE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE65283F715B001ECFBE /* LoginView.swift */; };
 		63E9FE68283F77D7001ECFBE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE67283F77D7001ECFBE /* RegisterView.swift */; };
 		63E9FE6A283F7F29001ECFBE /* InputDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE69283F7F29001ECFBE /* InputDateField.swift */; };
@@ -97,6 +99,8 @@
 		63B5633E284A121100187674 /* ProfileFormBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFormBuilder.swift; sourceTree = "<group>"; };
 		63B56340284A121A00187674 /* ProfileForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileForm.swift; sourceTree = "<group>"; };
 		63B56342284A127D00187674 /* ProfileComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileComponents.swift; sourceTree = "<group>"; };
+		63D4D16828534F1700C618A3 /* UserLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoadingView.swift; sourceTree = "<group>"; };
+		63D4D16A2853501A00C618A3 /* ConnectingServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingServerView.swift; sourceTree = "<group>"; };
 		63E9FE65283F715B001ECFBE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		63E9FE67283F77D7001ECFBE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		63E9FE69283F7F29001ECFBE /* InputDateField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDateField.swift; sourceTree = "<group>"; };
@@ -293,6 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				63B56333284A055700187674 /* AppDelegate.swift */,
+				63D4D16828534F1700C618A3 /* UserLoadingView.swift */,
+				63D4D16A2853501A00C618A3 /* ConnectingServerView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -611,6 +617,7 @@
 				634229AA283F5A6700FCDA10 /* InputPasswordField.swift in Sources */,
 				63E9FE6F283F998E001ECFBE /* RegisterViewModel.swift in Sources */,
 				63934AAD284508AA008E8A1D /* UserDetails.swift in Sources */,
+				63D4D16B2853501A00C618A3 /* ConnectingServerView.swift in Sources */,
 				63A6FA6F284F81EB006926A3 /* ProfileTextField.swift in Sources */,
 				63B562F72847455400187674 /* RegisterForm.swift in Sources */,
 				63A6FA75284F8686006926A3 /* ProfilePasswordField.swift in Sources */,
@@ -633,6 +640,7 @@
 				63E9FE8F283FC442001ECFBE /* FormComponent.swift in Sources */,
 				63B562FB28474D5C00187674 /* LoginForm.swift in Sources */,
 				63E9FE74283F9EB9001ECFBE /* LoginViewModel.swift in Sources */,
+				63D4D16928534F1700C618A3 /* UserLoadingView.swift in Sources */,
 				63B562F9284748D800187674 /* CommonValidations.swift in Sources */,
 				63B5630328475D2100187674 /* TextFormComponent.swift in Sources */,
 				63B5631028486D7700187674 /* RegisterComponents.swift in Sources */,

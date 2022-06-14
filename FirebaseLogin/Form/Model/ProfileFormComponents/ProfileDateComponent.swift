@@ -14,6 +14,6 @@ final class ProfileDateComponent: FormComponent {
          title: String,
          validations: [ValidationManagerProtocol] = []) {
         self.title = title
-        super.init(id, validations: validations)
+        super.init(id, validations: validations, value: Date())
     }
 }
