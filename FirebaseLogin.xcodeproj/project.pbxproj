@@ -192,6 +192,7 @@
 				63E9FE87283FC343001ECFBE /* Form */,
 				63934AB328451B4E008E8A1D /* Session */,
 				6329A16228587D1400996539 /* LoadingView */,
+				634229A6283F582300FCDA10 /* PreviewModifiers */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -226,21 +227,12 @@
 				639778262844BBBA005394E6 /* Application */,
 				6329A15E28587C5A00996539 /* Flows */,
 				6329A15F28587C8400996539 /* Base */,
-				634229A2283F522300FCDA10 /* Helpers */,
 				63422994283F463E00FCDA10 /* LaunchScreen.storyboard */,
 				63422992283F463E00FCDA10 /* Assets.xcassets */,
 				63422997283F463E00FCDA10 /* Info.plist */,
 				63B563312849CF9F00187674 /* GoogleService-Info.plist */,
 			);
 			path = FirebaseLogin;
-			sourceTree = "<group>";
-		};
-		634229A2283F522300FCDA10 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				634229A6283F582300FCDA10 /* PreviewModifiers */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		634229A6283F582300FCDA10 /* PreviewModifiers */ = {
