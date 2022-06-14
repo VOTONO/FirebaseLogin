@@ -28,13 +28,13 @@ struct Firebase_User_Account_ManagementApp: App {
             NavigationView {
                 switch sessionService.isConnectingServer {
                 case true:
-                    ConnectingServerView()
+                    LoadingView(text: "Connecting to server")
                 case false:
                     switch sessionService.sessionState {
                     case .loggedIn:
                         switch sessionService.isRefreshingUser {
                         case true:
-                            UserLoadingView()
+                            LoadingView(text: "Updating user")
                         case false:
                             ProfileView(viewModel: ProfileViewModel(sessionService: sessionService, formBuilder: ProfileFormBuilder()))
                         }

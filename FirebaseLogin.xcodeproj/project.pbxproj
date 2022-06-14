@@ -12,6 +12,7 @@
 		631EBBF8284087EF00D6255D /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631EBBF7284087EF00D6255D /* ValidationError.swift */; };
 		631EBBFB28408CC500D6255D /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631EBBFA28408CC500D6255D /* ValidationManager.swift */; };
 		631EBBFE2840E6FC00D6255D /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631EBBFD2840E6FC00D6255D /* FormState.swift */; };
+		6329A16128587CC900996539 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6329A16028587CC900996539 /* LoadingView.swift */; };
 		63422993283F463E00FCDA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63422992283F463E00FCDA10 /* Assets.xcassets */; };
 		63422996283F463E00FCDA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63422994283F463E00FCDA10 /* LaunchScreen.storyboard */; };
 		634229A5283F524F00FCDA10 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634229A4283F524F00FCDA10 /* InputTextField.swift */; };
@@ -33,10 +34,10 @@
 		63B562FB28474D5C00187674 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B562FA28474D5C00187674 /* LoginForm.swift */; };
 		63B562FF2847520200187674 /* RegisterFormBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B562FE2847520200187674 /* RegisterFormBuilder.swift */; };
 		63B563012847529200187674 /* LoginFormBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B563002847529200187674 /* LoginFormBuilder.swift */; };
-		63B5630328475D2100187674 /* TextFormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5630228475D2100187674 /* TextFormComponent.swift */; };
-		63B5630528475D4C00187674 /* PasswordFormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5630428475D4C00187674 /* PasswordFormComponent.swift */; };
-		63B5630728475D8700187674 /* DateFormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5630628475D8700187674 /* DateFormComponent.swift */; };
-		63B5631028486D7700187674 /* RegisterComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5630F28486D7700187674 /* RegisterComponents.swift */; };
+		63B5630328475D2100187674 /* InputTextComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5630228475D2100187674 /* InputTextComponent.swift */; };
+		63B5630528475D4C00187674 /* InputPasswordComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5630428475D4C00187674 /* InputPasswordComponent.swift */; };
+		63B5630728475D8700187674 /* InputDateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5630628475D8700187674 /* InputDateComponent.swift */; };
+		63B5631028486D7700187674 /* InputComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5630F28486D7700187674 /* InputComponents.swift */; };
 		63B5632E2849137900187674 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5632D2849137900187674 /* UserLogin.swift */; };
 		63B563302849C0C300187674 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5632F2849C0C300187674 /* LoginService.swift */; };
 		63B563322849CF9F00187674 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63B563312849CF9F00187674 /* GoogleService-Info.plist */; };
@@ -46,8 +47,6 @@
 		63B5633F284A121100187674 /* ProfileFormBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5633E284A121100187674 /* ProfileFormBuilder.swift */; };
 		63B56341284A121A00187674 /* ProfileForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B56340284A121A00187674 /* ProfileForm.swift */; };
 		63B56343284A127D00187674 /* ProfileComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B56342284A127D00187674 /* ProfileComponents.swift */; };
-		63D4D16928534F1700C618A3 /* UserLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4D16828534F1700C618A3 /* UserLoadingView.swift */; };
-		63D4D16B2853501A00C618A3 /* ConnectingServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4D16A2853501A00C618A3 /* ConnectingServerView.swift */; };
 		63E9FE66283F715B001ECFBE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE65283F715B001ECFBE /* LoginView.swift */; };
 		63E9FE68283F77D7001ECFBE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE67283F77D7001ECFBE /* RegisterView.swift */; };
 		63E9FE6A283F7F29001ECFBE /* InputDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9FE69283F7F29001ECFBE /* InputDateField.swift */; };
@@ -65,6 +64,7 @@
 		631EBBF7284087EF00D6255D /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		631EBBFA28408CC500D6255D /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		631EBBFD2840E6FC00D6255D /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
+		6329A16028587CC900996539 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		63422986283F463700FCDA10 /* FirebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63422992283F463E00FCDA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63422995283F463E00FCDA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,10 +86,10 @@
 		63B562FA28474D5C00187674 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		63B562FE2847520200187674 /* RegisterFormBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormBuilder.swift; sourceTree = "<group>"; };
 		63B563002847529200187674 /* LoginFormBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormBuilder.swift; sourceTree = "<group>"; };
-		63B5630228475D2100187674 /* TextFormComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormComponent.swift; sourceTree = "<group>"; };
-		63B5630428475D4C00187674 /* PasswordFormComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFormComponent.swift; sourceTree = "<group>"; };
-		63B5630628475D8700187674 /* DateFormComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormComponent.swift; sourceTree = "<group>"; };
-		63B5630F28486D7700187674 /* RegisterComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterComponents.swift; sourceTree = "<group>"; };
+		63B5630228475D2100187674 /* InputTextComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextComponent.swift; sourceTree = "<group>"; };
+		63B5630428475D4C00187674 /* InputPasswordComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordComponent.swift; sourceTree = "<group>"; };
+		63B5630628475D8700187674 /* InputDateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDateComponent.swift; sourceTree = "<group>"; };
+		63B5630F28486D7700187674 /* InputComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputComponents.swift; sourceTree = "<group>"; };
 		63B5632D2849137900187674 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		63B5632F2849C0C300187674 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		63B563312849CF9F00187674 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -99,8 +99,6 @@
 		63B5633E284A121100187674 /* ProfileFormBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFormBuilder.swift; sourceTree = "<group>"; };
 		63B56340284A121A00187674 /* ProfileForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileForm.swift; sourceTree = "<group>"; };
 		63B56342284A127D00187674 /* ProfileComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileComponents.swift; sourceTree = "<group>"; };
-		63D4D16828534F1700C618A3 /* UserLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoadingView.swift; sourceTree = "<group>"; };
-		63D4D16A2853501A00C618A3 /* ConnectingServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingServerView.swift; sourceTree = "<group>"; };
 		63E9FE65283F715B001ECFBE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		63E9FE67283F77D7001ECFBE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		63E9FE69283F7F29001ECFBE /* InputDateField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDateField.swift; sourceTree = "<group>"; };
@@ -178,6 +176,34 @@
 			path = FormState;
 			sourceTree = "<group>";
 		};
+		6329A15E28587C5A00996539 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				63E9FE75283F9EDB001ECFBE /* Login */,
+				63E9FE70283F9D32001ECFBE /* Registration */,
+				63B56335284A05C300187674 /* Profile */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		6329A15F28587C8400996539 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				63E9FE87283FC343001ECFBE /* Form */,
+				63934AB328451B4E008E8A1D /* Session */,
+				6329A16228587D1400996539 /* LoadingView */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6329A16228587D1400996539 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				6329A16028587CC900996539 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 		6342297D283F463700FCDA10 = {
 			isa = PBXGroup;
 			children = (
@@ -198,12 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				639778262844BBBA005394E6 /* Application */,
-				63E9FE87283FC343001ECFBE /* Form */,
-				63934AB328451B4E008E8A1D /* Session */,
-				63E9FE75283F9EDB001ECFBE /* Login */,
-				63E9FE70283F9D32001ECFBE /* Registration */,
-				63B56335284A05C300187674 /* Profile */,
-				634229A2283F522300FCDA10 /* Base */,
+				6329A15E28587C5A00996539 /* Flows */,
+				6329A15F28587C8400996539 /* Base */,
+				634229A2283F522300FCDA10 /* Helpers */,
 				63422994283F463E00FCDA10 /* LaunchScreen.storyboard */,
 				63422992283F463E00FCDA10 /* Assets.xcassets */,
 				63422997283F463E00FCDA10 /* Info.plist */,
@@ -212,12 +235,12 @@
 			path = FirebaseLogin;
 			sourceTree = "<group>";
 		};
-		634229A2283F522300FCDA10 /* Base */ = {
+		634229A2283F522300FCDA10 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				634229A6283F582300FCDA10 /* PreviewModifiers */,
 			);
-			path = Base;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		634229A6283F582300FCDA10 /* PreviewModifiers */ = {
@@ -297,8 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				63B56333284A055700187674 /* AppDelegate.swift */,
-				63D4D16828534F1700C618A3 /* UserLoadingView.swift */,
-				63D4D16A2853501A00C618A3 /* ConnectingServerView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -326,9 +347,9 @@
 		63A6FA71284F8321006926A3 /* InputFormComponents */ = {
 			isa = PBXGroup;
 			children = (
-				63B5630228475D2100187674 /* TextFormComponent.swift */,
-				63B5630428475D4C00187674 /* PasswordFormComponent.swift */,
-				63B5630628475D8700187674 /* DateFormComponent.swift */,
+				63B5630228475D2100187674 /* InputTextComponent.swift */,
+				63B5630428475D4C00187674 /* InputPasswordComponent.swift */,
+				63B5630628475D8700187674 /* InputDateComponent.swift */,
 			);
 			path = InputFormComponents;
 			sourceTree = "<group>";
@@ -336,7 +357,7 @@
 		63A6FA78284F9101006926A3 /* InputFields */ = {
 			isa = PBXGroup;
 			children = (
-				63B5630F28486D7700187674 /* RegisterComponents.swift */,
+				63B5630F28486D7700187674 /* InputComponents.swift */,
 			);
 			path = InputFields;
 			sourceTree = "<group>";
@@ -605,7 +626,7 @@
 			files = (
 				63B56334284A055700187674 /* AppDelegate.swift in Sources */,
 				63F7D2B628506ACA009B3E35 /* ProfileDateComponent.swift in Sources */,
-				63B5630528475D4C00187674 /* PasswordFormComponent.swift in Sources */,
+				63B5630528475D4C00187674 /* InputPasswordComponent.swift in Sources */,
 				631EBBF52840874000D6255D /* RegexFormItem.swift in Sources */,
 				63B5633F284A121100187674 /* ProfileFormBuilder.swift in Sources */,
 				634229AC283F60F800FCDA10 /* ButtonView.swift in Sources */,
@@ -617,14 +638,13 @@
 				634229AA283F5A6700FCDA10 /* InputPasswordField.swift in Sources */,
 				63E9FE6F283F998E001ECFBE /* RegisterViewModel.swift in Sources */,
 				63934AAD284508AA008E8A1D /* UserDetails.swift in Sources */,
-				63D4D16B2853501A00C618A3 /* ConnectingServerView.swift in Sources */,
 				63A6FA6F284F81EB006926A3 /* ProfileTextField.swift in Sources */,
 				63B562F72847455400187674 /* RegisterForm.swift in Sources */,
 				63A6FA75284F8686006926A3 /* ProfilePasswordField.swift in Sources */,
 				631EBBFE2840E6FC00D6255D /* FormState.swift in Sources */,
 				631EBBF8284087EF00D6255D /* ValidationError.swift in Sources */,
 				63B563012847529200187674 /* LoginFormBuilder.swift in Sources */,
-				63B5630728475D8700187674 /* DateFormComponent.swift in Sources */,
+				63B5630728475D8700187674 /* InputDateComponent.swift in Sources */,
 				63934AB628451B7B008E8A1D /* SessionUserDetails.swift in Sources */,
 				63E9FE68283F77D7001ECFBE /* RegisterView.swift in Sources */,
 				63E9FE92283FCCE6001ECFBE /* FormBuilderProtocol.swift in Sources */,
@@ -640,14 +660,14 @@
 				63E9FE8F283FC442001ECFBE /* FormComponent.swift in Sources */,
 				63B562FB28474D5C00187674 /* LoginForm.swift in Sources */,
 				63E9FE74283F9EB9001ECFBE /* LoginViewModel.swift in Sources */,
-				63D4D16928534F1700C618A3 /* UserLoadingView.swift in Sources */,
 				63B562F9284748D800187674 /* CommonValidations.swift in Sources */,
-				63B5630328475D2100187674 /* TextFormComponent.swift in Sources */,
-				63B5631028486D7700187674 /* RegisterComponents.swift in Sources */,
+				63B5630328475D2100187674 /* InputTextComponent.swift in Sources */,
+				63B5631028486D7700187674 /* InputComponents.swift in Sources */,
 				634229A8283F584100FCDA10 /* PreviewLayoutComponentModifier.swift in Sources */,
 				63934AAF28450907008E8A1D /* RegisterService.swift in Sources */,
 				63E9FE66283F715B001ECFBE /* LoginView.swift in Sources */,
 				63B5633B284A075600187674 /* ProfileViewModel.swift in Sources */,
+				6329A16128587CC900996539 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
